@@ -7,7 +7,8 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("test1");
+            Console.WriteLine("test2");
+            Console.WriteLine("test2");
         }
     }
 }
