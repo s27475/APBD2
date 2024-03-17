@@ -15,9 +15,15 @@ namespace ConsoleApplication1
         public static double Srednia(int[] numbers)
         {
             double sum = 0;
-            foreach (int zmienna2 in numbers)
+<<<<<<< HEAD
+            foreach (int zmiana in numbers)
             {
-                sum += zmienna2;
+                sum += zmiana;
+=======
+            foreach (int zmiana in numbers)
+            {
+                sum += zmiana;
+>>>>>>> feature_new
             }
             return sum/numbers.Length;
         }
