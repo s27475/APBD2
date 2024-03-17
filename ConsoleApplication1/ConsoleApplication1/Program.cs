@@ -7,9 +7,9 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("test3");
-            Console.WriteLine("test3");
-            Console.WriteLine("test3");
+            int[] tab = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Console.WriteLine(Srednia(tab));
+            Console.WriteLine(MaxInt(tab));
         }
 
         public static double Srednia(int[] numbers)
@@ -20,6 +20,20 @@ namespace ConsoleApplication1
                 sum += number;
             }
             return sum/numbers.Length;
+        }
+        
+        public static int MaxInt(int[] numbers)
+        {
+            int maxint = numbers[0];
+            for(int i=1; i<numbers.Length; i++)
+            {
+                if (maxint < numbers[i])
+                {
+                    maxint = numbers[i];
+                }
+            }
+
+            return maxint;
         }
     }
 }
